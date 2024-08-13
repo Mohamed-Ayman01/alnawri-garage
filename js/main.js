@@ -36,23 +36,6 @@
         }
     });
     
-    
-    // Dropdown on mouse hover
-    $(document).ready(function () {
-        function toggleNavbarMethod() {
-            if ($(window).width() > 992) {
-                $('.navbar .dropdown').on('mouseover', function () {
-                    $('.dropdown-toggle', this).trigger('click');
-                }).on('mouseout', function () {
-                    $('.dropdown-toggle', this).trigger('click').blur();
-                });
-            } else {
-                $('.navbar .dropdown').off('mouseover').off('mouseout');
-            }
-        }
-        toggleNavbarMethod();
-        $(window).resize(toggleNavbarMethod);
-    });
 
     
     // Main carousel
@@ -71,15 +54,7 @@
         ]
     });
 
-    
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
-
-
-    // Testimonials carousel
+    // gallery carousel
     $(".gallery-carousel").owlCarousel({
         center: true,
         autoplay: true,
@@ -98,30 +73,6 @@
             },
             992:{
                 items:3
-            }
-        }
-    });
-    
-    
-    // Related post carousel
-    $(".related-slider").owlCarousel({
-        autoplay: true,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:1
-            },
-            768:{
-                items:2
             }
         }
     });
