@@ -35,7 +35,7 @@ a:focus {
 }
 
 .link-underline {
-    text-decoration: dashed underline;
+    text-decoration: dashed underline #ccc;
 }
 
 .btn.btn-custom {
