@@ -634,6 +634,12 @@ a:focus {
     color: white;
 }
 
+@media (max-width: 767px) {
+    .service .row * {
+    text-align: center;
+    }
+}
+
 .service .service-item {
     position: relative;
     width: 100%;
